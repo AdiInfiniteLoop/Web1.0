@@ -1,381 +1,390 @@
-<style>
-    .subscribe-button {
-        background-color: #cc0000;
-        color: white;
-        border: none;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 20px;
-        border-radius: 2px;
-        cursor:pointer;
-        font-size:0.37cm;
-        margin-right: 8px;
-        transition: opacity 0.15s;
-        vertical-align: bottom;
-}
-    .subscribe-button:hover{
-        opacity: 0.7;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buttons</title>
+</head>
+<body>
+    <style>
+        .subscribe-button {
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            border-radius: 2px;
+            cursor:pointer;
+            font-size:0.37cm;
+            margin-right: 8px;
+            transition: opacity 0.15s;
+            vertical-align: bottom;
     }
-    .subscribe-button:active{
-        opacity: 0.4;
-    }
-</style>
-<button class="subscribe-button">
-    SUBSCRIBE
-</button>
-<style>
-    .join-button{
-        background-color: white;
-        color:#176ef0;
-        border-radius: 2px;
-        border-color:#297af2;
-        padding-left: 20px;
-        padding-top: 9px;
-        padding-bottom: 10px;
-        padding-right: 20px;
-        border-style:solid;
-        border-width: 1px;
-        cursor: pointer;
-        margin-right: 9px;
-        transition: background-color 0.15s ,color 0.15s;
-    }
-    .join-button:hover{
-        background-color: #176ef0;
-        color: white;
-    }
-    .join-button:active{
-        opacity: 0.8;
-    }
-</style>
-<button class="join-button">
-    JOIN
-</button>
-
-<style>
-    .tweet-button{
-        background-color: #288bfc;
-        color: white;
-        border-radius: 109\px;
-        border: none;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 20px;
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        margin-left: 12px;
-        transition: box-shadow 0.15s;
-        vertical-align: bottom;
-    }
-    .tweet-button:hover{
-        box-shadow: 5 5 10 rgba(0,0,0,0.15);
-    }
-    .tweet-button:active{
-        opacity: 0.8;
-    }
-</style>
-<button class="tweet-button">
-    Tweet
-</button>
-
-<p><b>Exercises:</b></p>
-
-<p>Uber</p>
-<style>
-    .uber-button{
-        background-color: black;
-        height: 36px;
-        width: 130px;
-        border: none;
-        color: white;
-        font-weight:400;
-        cursor: pointer;
-        transition: opacity 0.15s;  
-    }
-    .uber-button:hover{
-        opacity: 0.7;
-    }
-</style>
-<button class="uber-button">
-    Request Now
-</button>
-
-
-<p>Amazon</p>
-<style>
-    .amazon-button{
-        background-color: #fbe414;
-        font-weight: 420;
-        height: 36;
-        width: 210;
-        font-size: 16px;
-        border-radius: 18px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.15s;
-        transition: opacity 0.15s;
-    }
-    .amazon-button:hover{
-        background-color: #eed70c;
-    }
-    .amazon-button:active{
-        opacity: 0.7;
-    }
-</style>
-<button class="amazon-button">Add to Cart</button>
-
-<p>GitHub</p>
-<style>
-    .github-button{
-        background-color: rgb(46, 164, 79);
-        color: white;
-        border-style: solid;
-        border-radius: 6px;
-        border:none;
-        height: 44;
-        width: 90;
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        transition: box-shadow 0.15s, opacity 0.15s;
-    }
-    .github-button:hover{
-        box-shadow: 5 5 10 rgba(0,0,0,0.15);
-        opacity: 0.7;
-    }
-</style>
-
-<button class="github-button">
-    Sign up
-</button>
-
-<p>Bootstrap</p>
-<style>
-    .bootstrap-button{
-        background-color: rgb(121, 82, 179);
-        color: white;
-        height: 46;
-        width: 120;
-        border: none;
-        border-radius: 5px;
-        font-weight: 800;
-        font-size: 16px;
-        margin-right: 14;
-        cursor: pointer;
-        transition: background-color 0.15s;
-    }
-    .bootstrap-button:hover{
-        background-color: rgb(91, 48, 156);
-    }
-</style>
-<button class="bootstrap-button">
-    Get started
-</button>
-
-<style>
-    .download-button{
-        background-color: rgb(255, 255, 255);
-        color: rgb(146, 127, 127);
-        height: 46;
-        width: 120;
-        border-style: solid;
-        border-color: rgb(146, 127, 127);
-        border-radius: 5px;
-        font-weight: 800;
-        font-size: 16px;
-        cursor: pointer;
-        transition: color 0.15s, background-color 0.15s,border-color 0.15s;
-    }
-    .download-button:hover{
-        background-color:rgb(146, 127, 127);
-        color: white;
-        border-color: white;
-    }
-</style>
-<button class="download-button"> 
-    Download
-</button>
-
-<p>LinkedIn</p>
-<style>
-    .linkedin-button{
-        background-color: #1151b0;
-        color: white;
-        height: 50px;
-        width: 310;
-        font-weight: bold;
-        font-size: 19px;
-        border-radius: 25px;
-        margin-right: 17px;
-        cursor: pointer;
-        border-color: #1151b0;
-    }
-    .linkedin-button:hover{
-        background-color: #0c397c;
-    }
-</style>
-<button class="linkedin-button">
-    Apply on company website
-</button>
-
-<style>
-    .save-button{
-        background-color: white;
-    color: #1151b0;
-    height: 48px;
-    width: 90;
-    border-style: solid;
-    border-color:  #1151b0;
-    font-size: 19px;
-    border-radius: 23px;
-    font-weight: bold;
-    cursor: pointer;
+        .subscribe-button:hover{
+            opacity: 0.7;
+        }
+        .subscribe-button:active{
+            opacity: 0.4;
+        }
+    </style>
+    <button class="subscribe-button">
+        SUBSCRIBE
+    </button>
+    <style>
+        .join-button{
+            background-color: white;
+            color:#176ef0;
+            border-radius: 2px;
+            border-color:#297af2;
+            padding-left: 20px;
+            padding-top: 9px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            border-style:solid;
+            border-width: 1px;
+            cursor: pointer;
+            margin-right: 9px;
+            transition: background-color 0.15s ,color 0.15s;
+        }
+        .join-button:hover{
+            background-color: #176ef0;
+            color: white;
+        }
+        .join-button:active{
+            opacity: 0.8;
+        }
+    </style>
+    <button class="join-button">
+        JOIN
+    </button>
     
-    }
-    .save-button:hover{
-        background-color: aliceblue;
-        border-width: 3px;
-    }
-</style>
-<button class="save-button">Save</button>
-
-<style>
-    .back-to-amazon{
-        color:#260cee
-    }
-    .back-to-amazon:hover{
-        color: #ddca1d;
-    }
-</style>
-<p><b><b>CHALLENGE:</b></b></p>
-<a href="https://www.amazon.com/", target="_blank"><p class="back-to-amazon">Back to Amazon</p></a>
-<p style="font-size: xx-large; font-style:inherit;"><b>Nike Black Air Force 2</b></p>
-<p style="color: rgb(4, 207, 4); font-size: larger;"><b>$39 - In Stock</b></p>
-<p style="font-weight: 500;">Free Delivery Tomorrow</p>
-<button class="amazon-button" >Add to Cart</button><button class="buy-button">Buy Now</button>
-<style>
-    .buy-button{
-        background-color: #bc6411;
-        color: black;
-        height: 36px;
-        width: 210;
-        margin-left: 18px;
-        border-radius: 18px;
-        font-size: 16px;
+    <style>
+        .tweet-button{
+            background-color: #288bfc;
+            color: white;
+            border-radius: 109\px;
+            border: none;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 12px;
+            transition: box-shadow 0.15s;
+            vertical-align: bottom;
+        }
+        .tweet-button:hover{
+            box-shadow: 5 5 10 rgba(0,0,0,0.15);
+        }
+        .tweet-button:active{
+            opacity: 0.8;
+        }
+    </style>
+    <button class="tweet-button">
+        Tweet
+    </button>
+    
+    <p><b>Exercises:</b></p>
+    
+    <p>Uber</p>
+    <style>
+        .uber-button{
+            background-color: black;
+            height: 36px;
+            width: 130px;
+            border: none;
+            color: white;
+            font-weight:400;
+            cursor: pointer;
+            transition: opacity 0.15s;  
+        }
+        .uber-button:hover{
+            opacity: 0.7;
+        }
+    </style>
+    <button class="uber-button">
+        Request Now
+    </button>
+    
+    
+    <p>Amazon</p>
+    <style>
+        .amazon-button{
+            background-color: #fbe414;
+            font-weight: 420;
+            height: 36;
+            width: 210;
+            font-size: 16px;
+            border-radius: 18px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.15s;
+            transition: opacity 0.15s;
+        }
+        .amazon-button:hover{
+            background-color: #eed70c;
+        }
+        .amazon-button:active{
+            opacity: 0.7;
+        }
+    </style>
+    <button class="amazon-button">Add to Cart</button>
+    
+    <p>GitHub</p>
+    <style>
+        .github-button{
+            background-color: rgb(46, 164, 79);
+            color: white;
+            border-style: solid;
+            border-radius: 6px;
+            border:none;
+            height: 44;
+            width: 90;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            transition: box-shadow 0.15s, opacity 0.15s;
+        }
+        .github-button:hover{
+            box-shadow: 5 5 10 rgba(0,0,0,0.15);
+            opacity: 0.7;
+        }
+    </style>
+    
+    <button class="github-button">
+        Sign up
+    </button>
+    
+    <p>Bootstrap</p>
+    <style>
+        .bootstrap-button{
+            background-color: rgb(121, 82, 179);
+            color: white;
+            height: 46;
+            width: 120;
+            border: none;
+            border-radius: 5px;
+            font-weight: 800;
+            font-size: 16px;
+            margin-right: 14;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+        .bootstrap-button:hover{
+            background-color: rgb(91, 48, 156);
+        }
+    </style>
+    <button class="bootstrap-button">
+        Get started
+    </button>
+    
+    <style>
+        .download-button{
+            background-color: rgb(255, 255, 255);
+            color: rgb(146, 127, 127);
+            height: 46;
+            width: 120;
+            border-style: solid;
+            border-color: rgb(146, 127, 127);
+            border-radius: 5px;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.15s, background-color 0.15s,border-color 0.15s;
+        }
+        .download-button:hover{
+            background-color:rgb(146, 127, 127);
+            color: white;
+            border-color: white;
+        }
+    </style>
+    <button class="download-button"> 
+        Download
+    </button>
+    
+    <p>LinkedIn</p>
+    <style>
+        .linkedin-button{
+            background-color: #1151b0;
+            color: white;
+            height: 50px;
+            width: 310;
+            font-weight: bold;
+            font-size: 19px;
+            border-radius: 25px;
+            margin-right: 17px;
+            cursor: pointer;
+            border-color: #1151b0;
+        }
+        .linkedin-button:hover{
+            background-color: #0c397c;
+        }
+    </style>
+    <button class="linkedin-button">
+        Apply on company website
+    </button>
+    
+    <style>
+        .save-button{
+            background-color: white;
+        color: #1151b0;
+        height: 48px;
+        width: 90;
+        border-style: solid;
+        border-color:  #1151b0;
+        font-size: 19px;
+        border-radius: 23px;
+        font-weight: bold;
         cursor: pointer;
-        transform:opacity 0.15s;
-        border: none;
-    }
-    .buy-button:hover{
-        opacity: 0.8;
-    }
-    .buy-button:active{
-        opacity: 0.5;
-    }
-</style>
-
-
-<p><b>CHALLENGE EXERCISES:</b></p>
-<p>1.</p>
-<style>
-    .back-button{
-        padding-left: 15;
-        padding-top: 10;
-        padding-right: 15;
-        padding-bottom: 10;
-        font-size: larger;
-        margin-right: 18px;
-    }
-</style>
-<button class="back-button">
-    Back
-</button>
-<a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">1</a>
-<a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">2</a>
-<a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">3</a>
-<a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">4</a>
-<a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">5</a>
-<button class="next-button">
-    Next
-</button>
-<style>
-    .search{
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-</style>
-
-<style>
-    .next-button{
-        padding-left: 15;
-        padding-top: 10;
-        padding-right: 15;
-        padding-bottom: 10;
-        font-size: larger;
-        margin-left: 18px;
-    }
-</style>
-
-<p>2.</p>
-<style>
-    .stretch{
-        background-color: rgb(3, 169, 3);
-        padding-left: 30;
-        padding-top: 25;
-        padding-bottom:25 ;
-        padding-right: 30;
-        font-size: x-large;
+        
+        }
+        .save-button:hover{
+            background-color: aliceblue;
+            border-width: 3px;
+        }
+    </style>
+    <button class="save-button">Save</button>
+    
+    <style>
+        .back-to-amazon{
+            color:#260cee
+        }
+        .back-to-amazon:hover{
+            color: #ddca1d;
+        }
+    </style>
+    <p><b><b>CHALLENGE:</b></b></p>
+    <a href="https://www.amazon.com/", target="_blank"><p class="back-to-amazon">Back to Amazon</p></a>
+    <p style="font-size: xx-large; font-style:inherit;"><b>Nike Black Air Force 2</b></p>
+    <p style="color: rgb(4, 207, 4); font-size: larger;"><b>$39 - In Stock</b></p>
+    <p style="font-weight: 500;">Free Delivery Tomorrow</p>
+    <button class="amazon-button" >Add to Cart</button><button class="buy-button">Buy Now</button>
+    <style>
+        .buy-button{
+            background-color: #bc6411;
+            color: black;
+            height: 36px;
+            width: 210;
+            margin-left: 18px;
+            border-radius: 18px;
+            font-size: 16px;
+            cursor: pointer;
+            transform:opacity 0.15s;
+            border: none;
+        }
+        .buy-button:hover{
+            opacity: 0.8;
+        }
+        .buy-button:active{
+            opacity: 0.5;
+        }
+    </style>
+    
+    
+    <p><b>CHALLENGE EXERCISES:</b></p>
+    <p>1.</p>
+    <style>
+        .back-button{
+            padding-left: 15;
+            padding-top: 10;
+            padding-right: 15;
+            padding-bottom: 10;
+            font-size: larger;
+            margin-right: 18px;
+        }
+    </style>
+    <button class="back-button">
+        Back
+    </button>
+    <a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">1</a>
+    <a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">2</a>
+    <a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">3</a>
+    <a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">4</a>
+    <a class="search" href="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/1-exercise-solutions/lesson-04/4h.html">5</a>
+    <button class="next-button">
+        Next
+    </button>
+    <style>
+        .search{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    </style>
+    
+    <style>
+        .next-button{
+            padding-left: 15;
+            padding-top: 10;
+            padding-right: 15;
+            padding-bottom: 10;
+            font-size: larger;
+            margin-left: 18px;
+        }
+    </style>
+    
+    <p>2.</p>
+    <style>
+        .stretch{
+            background-color: rgb(3, 169, 3);
+            padding-left: 30;
+            padding-top: 25;
+            padding-bottom:25 ;
+            padding-right: 30;
+            font-size: x-large;
+            color: white;
+            transition: padding-left 0.2s ,padding-right 0.2s, padding-top 0.2s, padding-bottom 0.2s; 
+           }
+        .stretch:hover{
+            padding-left: 50;
+            padding-top: 45;
+            padding-bottom:45 ;
+            padding-right: 50;
+        }
+    </style>
+    <button class="stretch">
+        Stretch
+    </button>
+    
+    <p>3.</p>
+    
+    <style>
+    .stretch-button {
+        background-color: green;
         color: white;
-        transition: padding-left 0.2s ,padding-right 0.2s, padding-top 0.2s, padding-bottom 0.2s; 
-       }
-    .stretch:hover{
-        padding-left: 50;
-        padding-top: 45;
-        padding-bottom:45 ;
-        padding-right: 50;
-    }
-</style>
-<button class="stretch">
-    Stretch
-</button>
+        border: none;
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+    
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+        transition: padding 0.15s,
+          margin 0.15s;
+      }
+    
+      .stretch-button:hover {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    </style>
+    
+    <button class="stretch-button">
+      One
+    </button>
+    <button class="stretch-button">
+      Two
+    </button>
+    <button class="stretch-button">
+      Three
+    </button>
 
-<p>3.</p>
-
-<style>
-.stretch-button {
-    background-color: green;
-    color: white;
-    border: none;
-    font-size: 18px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    transition: padding 0.15s,
-      margin 0.15s;
-  }
-
-  .stretch-button:hover {
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-</style>
-
-<button class="stretch-button">
-  One
-</button>
-<button class="stretch-button">
-  Two
-</button>
-<button class="stretch-button">
-  Three
-</button>
+</body>
+</html>
